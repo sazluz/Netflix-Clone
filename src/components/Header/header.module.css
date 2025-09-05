@@ -1,0 +1,31 @@
+.header_container {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+
+.menu_icon {
+  display: none;
+}
+
+.header_center ul,
+.header_right ul div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  height: 10vh;
+}
+
+@media screen and (max-width: 768px) {
+  .header_center ul,
+  .header_right ul div {
+    display: none;
+  }
+  .menu_icon {
+    display: inline-block;
+  }
+}
